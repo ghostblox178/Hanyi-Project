@@ -13,7 +13,7 @@
     <!-- Header mit Logo und Titel -->
     <header style="background-color: rgba(220, 201, 170, 0.814);">
         <h1>Welcome to Hamburg</h1>
-        <img id="flag" src="hamburg-fahne-2362x1539.gif" alt="Hamburg Flag" title="Hamburg Flag" width="200" height="130">
+        <img id="flag" src="hamburg-fahne-2362x1539.gif" alt="Hamburg Flag" title="Hamburg Flag">
     </header>
 
     <!-- Navigation -->
@@ -31,9 +31,9 @@
     </nav>
 
     <!-- Hero Image -->
-    <header>
+    <div class="hero-image">
         <img id="hh" src="Hamburg_Hintergrund.jpeg" alt="Hamburg Image" title="Hamburg U3 in Baumwall">
-    </header>
+    </div>
 
     <br>
 
@@ -60,7 +60,8 @@
                 </p>
             </div>
 
-            <video class="video" src="hamburg city.mp4" autoplay controls muted></video>
+            <!-- VIDEO: Leerzeichen durch %20 ersetzen! -->
+            <video class="video" src="hamburg%20city.mp4" autoplay controls muted></video>
         </div>
 
         <br>
@@ -69,10 +70,9 @@
         <div class="grid-container">
             <!-- Spalte 1: Elbphilharmonie -->
             <div class="grid-item">
-                <a href="hamburg.html" target="_self">
+                <a href="hamburg.html">
                     <img src="Download.jpg" alt="Elbphilharmonie" title="Elbphilharmonie">
                 </a>
-                
                 <h3>Elbphilharmonie</h3>
                 <p>
                     The Elbphilharmonie is Hamburg's modern landmark, opened in January 2017. 
@@ -87,10 +87,9 @@
             
             <!-- Spalte 2: Finkenwerder Scholle -->
             <div class="grid-item">
-                <a href="fooddrink.html" target="_self">
+                <a href="fooddrink.html">
                     <img src="Scholle-Finkenwerder-Art_1931-768x512.jpg" alt="Finkenwerder Scholle" title="Finkenwerder Scholle">
                 </a>
-                
                 <h3>Finkenwerder Scholle</h3>
                 <p>
                     Finkenwerder Scholle is a classic fish specialty from the Hamburg district of Hamburg-Finkenwerder. 
@@ -103,7 +102,7 @@
 
             <!-- Spalte 3: Cultural Heritage / Speicherstadt -->
             <div class="grid-item">
-                <a href="cultural.html" target="_self">
+                <a href="cultural.html">
                     <img src="speicherstadt.jpeg" alt="Speicherstadt" title="Speicherstadt">
                 </a>
                 <h3>Cultural Heritage</h3>
@@ -117,11 +116,10 @@
         </div>
     </main>
 
-    <!-- Footer (Jetzt AUßERHALB von main, aber INNERHALB von body) -->
+    <!-- Footer -->
     <footer>
         <p style="text-align: left;">&copy; 2026 Hanyi Hamburg. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
