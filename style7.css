@@ -1,0 +1,147 @@
+
+#flag{
+margin: 0px;
+padding: 0px;
+border-radius: 80px 80px 80px 80px;
+display: block;
+position: absolute;   /* Logo aus dem normalen Flow nehmen */
+top: 10px;            /* Abstand von oben */
+left: 10px;           /* Abstand von links */
+width: 90px;          /* kleinere Größe, anpassen nach Wunsch */
+height: 60px;         /* Höhe passt sich automatisch an */
+border-radius: 60%;
+}
+
+h1{
+    text-align: left;
+    margin: 20px 0px 0px 115px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s ease;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1:hover{
+    color: rgb(255, 0, 0);
+}
+
+
+
+.navbar ul{
+ list-style-type: none;
+ background-color: rgb(225, 156, 156);
+ padding: 0px;
+ margin: 0px;
+ overflow: hidden;
+border-bottom: 2px solid rgb(99, 99, 99);
+}
+.navbar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+.navbar li{
+    float: left;
+    text-align: center;
+}
+.navbar a{
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #c7bfbf;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgb(255, 150, 150);
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 247, 247, 0.5);
+}
+
+.submit-btn {
+    background-color: rgb(232, 197, 197);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(200, 120, 120);
+}
+
+/* Responsive für Handys */
+@media (max-width: 768px) {
+    .contact-section {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+    
+    .contact-section h2 {
+        font-size: 28px;
+    }
+}
+
+footer{
+    background-color: rgb(225, 156, 156);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid rgb(99, 99, 99);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
