@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="style7.css">
-    <link rel="icon" href="hanyilogo.jpg" type="image/png">
+    <link rel="icon" href="Image/hanyilogo.jpg" type="image/png">
 </head>
 
 <body style="background-color: rgba(208, 206, 204, 0.814);">
@@ -13,7 +13,7 @@
     <!-- Header mit Logo und Titel -->
     <header style="background-color: rgba(217, 218, 218, 0.834);">
         <h1>Welcome to Hamburg</h1>
-        <img id="flag" src="hamburg-fahne-2362x1539.gif" alt="Hamburg Flag" title="Hamburg Flag">
+        <img id="flag" src="Image/hamburg-fahne-2362x1539.gif" alt="Hamburg Flag" title="Hamburg Flag" width="200" height="130">
     </header>
 
     <!-- Navigation -->
@@ -30,35 +30,37 @@
         </ul>
     </nav>
 
-    <!-- Logo Bild (nicht header!) -->
-    <div class="logo-image">
-        <img src="hanyilogo.jpg" alt="Hanyi Logo" title="Hanyi Logo">
+    <!-- Logo-Banner (das zweite Header-Bild) -->
+    <div class="logo-banner">
+        <img src="Image/hanyilogo.jpg" alt="Hanyi Logo" height="400px" width="100%">
     </div>
 
-    <!-- Kontaktformular -->
-    <div class="contact-section">
-        <h2>Contact Me</h2>
-        
-        <form action="https://formspree.io/f/xgolknbk" method="POST" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Hauptinhalt: Kontaktformular -->
+    <main>
+        <div class="contact-section">
+            <h2 style="text-align: center;">Contact Me</h2>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="tel">Telefon:</label>
-            <input type="tel" id="tel" name="telefon" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
-            <button type="submit" class="submit-btn">Send</button>
-        </form>
-    </div>
+            <form action="https://formspree.io/f/xgolknbk" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="tel">Telefon:</label>
+                <input type="tel" id="tel" name="telefon" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Hanyi Hamburg. All rights reserved.</p>
+        <p style="text-align: left;">&copy; 2026 Hanyi Hamburg. All rights reserved.</p>
     </footer>
 
 </body>
